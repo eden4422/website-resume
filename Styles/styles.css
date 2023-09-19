@@ -3,6 +3,9 @@ body {
     background-size: cover; /* This property ensures the image covers the entire background */
     background-repeat: no-repeat; /* Prevents the image from repeating */
 }
+a{
+    color: white;
+}
 
 h1{
     text-align: center;
@@ -22,20 +25,10 @@ h3{
 }
 
 p{
-    margin-left: auto; /* creates margins to be centered*/
-    margin-right: auto;
-    width: 30em; /* spacing of the margins */
     text-align: center;
     color: white;
-    font-family: "Times New Roman";
+    font-family: "Times New Roman", Arial, Verdana, serif;
     font-size: 20px;
-}
-
-.carousel{
-
-    margin-left: auto; /* creates margins to be centered*/
-    margin-right: auto;
-    width: 30em; /* spacing of the margins */
 }
 
 .carousel-item img{
@@ -48,4 +41,45 @@ p{
     width: 20px; /* Adjust the width of the tab as needed */
     display: inline-block;
     margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.GitHub-Repo {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.GitHub-Repo button{
+
+    color: white;
+    background-color: rgb(27, 26, 26);
+    text-decoration: none; /* Revomes text decorations */
+    height: 48px;
+    text-align: center; /* Centers the text in button */
+    vertical-align: middle; 
+    font-size: 18px;
+    width: 300px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: 0.1px;
+    white-space: wrap; 
+    border-radius: 8px;
+    cursor: pointer;  /* changes cursor to pointer */
+}
+
+.GitHub-Repo img{
+
+    padding: 0px 8px 3.5px 0px; /* adds padding to the icon */
+    height: 20px;
+    width: 20px;
+    vertical-align: middle; 
+}
+
+.centered{
+
+    margin-left: auto; /* creates margins to be centered*/
+    margin-right: auto;
+    width: 50em; /* spacing of the margins */
 }
