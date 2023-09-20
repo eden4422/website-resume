@@ -45,6 +45,24 @@ function quickSort (arr, low, high){
     return arr;
 }
 
+function isArray(arr){
+    //checks if its an array.
+    if (!Array.isArray(arr)) {
+        throw new Error('Input must be an array');
+    }
+    //checks if its a array of numbers.
+    for (const num of arr) {
+        if (typeof num !== 'number') {
+            throw new Error('Array must contain only numbers');
+        }
+    }
+
+    quickSort(arr, 0, arr.length - 1);
+
+}
+
 module.exports = {
+    
     quickSort: quickSort,
+    isArray: isArray,
 };
