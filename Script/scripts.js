@@ -41,8 +41,6 @@ function quickSort (arr, low, high){
         quickSort(arr, low, pi - 1);
         quickSort(arr, pi + 1, high);
     }
-
-    return arr;
 }
 
 function isArray(arr){
@@ -62,7 +60,7 @@ function isArray(arr){
 }
 
 module.exports = {
-    
+
     quickSort: quickSort,
     isArray: isArray,
 };
