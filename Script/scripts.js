@@ -10,6 +10,12 @@ function openChessRepo() {
     window.open(url, '_blank');
 }
 
+function openWebsiteRepo() {
+
+    let url = 'https://github.com/eden4422/website-resume';
+    window.open(url, '_blank');
+}
+
 function partition(arr, low, high){
 
     let pivot = arr[high];
