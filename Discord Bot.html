@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Stats Page</title>
+    <title>Discord Bot Page</title>
 
     <link type="text/css" rel="stylesheet" href="Styles\slick.css">
     <link type="text/css" rel="stylesheet" href="Styles\slick-theme.css">
@@ -16,26 +16,32 @@
             Navigate Home</a>
     </p>
     <div class="centered">
-        <!-- Intro to real stats -->
-        <h1>Real Stats</h1>
+        <!-- Intro to Discord Bot -->
+        <h1>Discord Bot</h1>
         <p><span class="tab"></span>
-            During the Coughacks Hack-a-Thon, our team of five student programmers had only 24 hours to create
-            functional software based on a surprise theme.
-            We researched, planned, designed, developed, tested, and presented our project within this tight timeframe.
+            I designed and developed a Discord bot from the ground up utilizing Python
+            and drawing almost exclusively from the <a
+                href="https://discordpy.readthedocs.io/en/stable/api.html">discord.py</a> documentation.
+            This project showcases my ability to grasp complex documentation and apply it effectively.
         </p>
         <p><span class="tab"></span>
-            Our project, "Real Stats," is a unique software inspired by classic game character stat sheets. It helps
-            users track their progress and set
-            achievable objectives for self-improvement and overall wellness. We made daunting tasks more manageable by
-            breaking them into smaller steps,
-            adding an element of fun and motivation.
+            The primary functionality of the bot centers around user interaction. Using the bot is
+            as simple as typing a command in the format '!(commandname)' within the Discord server. Upon receiving this
+            command, the bot responds by sending pictures of my friends depending on the command given.
         </p>
+        <p><span class="tab"></span>
+            In addition to its picture-sharing capabilities, my bot incorporates JSON functionality to interact with a
+            public API that offers random cat facts. When users trigger this command, the bot fetches a cat
+            fact from the API and replies promptly to the user who initiated the command. This demonstrates my ability
+            to work with external data sources, parse JSON data, and respond dynamically to user inputs.
+        </p>
+
         <h2>How It Works (make a video)</h2>
 
         <!-- Github Repo -->
         <h3>Github Repo</h3>
         <div class="GitHub-Repo">
-            <button onclick=openStatsRepo()>
+            <button onclick=openDiscordBotRepo()>
                 <img src="Images\github-logo.png" alt="github logo">
                 GitHub
             </button>

@@ -16,6 +16,12 @@ function openWebsiteRepo() {
     window.open(url, '_blank');
 }
 
+function openDiscordBotRepo() {
+
+    let url = 'https://github.com/eden4422/Python-Discord-Bot';
+    window.open(url, '_blank');
+}
+
 function partition(arr, low, high){
 
     let pivot = arr[high];
