@@ -41,18 +41,47 @@ p {
 
 section {
     padding-top: 25vh;
-    padding-bottom: 50vh;
+    padding-bottom: 25vh;
+}
+
+figure {
+
+    margin: 0;
+}
+
+figcaption {
+
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif, 'Times New Roman', Arial;
+}
+
+.navbar {
+
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
 }
 
 .navbar ul {
 
-    list-style: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar li {
 
     display: inline-block;
-    margin-right: 10px;
+    margin-right: 40px;
+    color: white;
     /* add spacing between items */
 }
 
@@ -144,6 +173,7 @@ section {
 
     display: flex;
     flex-wrap: wrap;
+    text-align: justify;
 }
 
 .logos img {
