@@ -1,9 +1,13 @@
 body {
     background-image: url('../Images/sleek.jpg');
-    background-size: cover;
-    /* This property ensures the image covers the entire background */
+    background-size: 100% 100%;
+    /* Fits entienty of the background size */
     background-repeat: no-repeat;
     /* Prevents the image from repeating */
+    background-position: center;
+    /* Center the image within the container */
+    background-attachment: fixed;
+    /* Optional: Fixed background scrolling */
 }
 
 a {
@@ -33,6 +37,11 @@ p {
     color: white;
     font-family: "Times New Roman", Arial, Verdana, serif;
     font-size: 20px;
+}
+
+section {
+    padding-top: 25vh;
+    padding-bottom: 25vh;
 }
 
 .navbar ul {
@@ -98,7 +107,6 @@ p {
 }
 
 .centered {
-
     margin-left: auto;
     /* creates margins to be centered*/
     margin-right: auto;
