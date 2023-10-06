@@ -22,13 +22,13 @@ function openDiscordBotRepo() {
     window.open(url, '_blank');
 }
 
-function partition(arr, low, high){
+function partition(arr, low, high) {
 
     let pivot = arr[high];
     let i = low - 1;
-    for (let j = low; j <= high - 1; j++){
+    for (let j = low; j <= high - 1; j++) {
 
-        if (arr[j] < pivot){
+        if (arr[j] < pivot) {
             i++;
             swap(arr, i, j);
         }
@@ -37,16 +37,16 @@ function partition(arr, low, high){
     return (i + 1)
 }
 
-function swap(arr, i, j){
+function swap(arr, i, j) {
 
     let temp = arr[i];
     arr[i] = arr[j];
     arr[j] = temp;
 }
 
-function quickSort (arr, low, high){
+function quickSort(arr, low, high) {
 
-    if (low < high){
+    if (low < high) {
 
         let pi = partition(arr, low, high);
 
@@ -55,7 +55,7 @@ function quickSort (arr, low, high){
     }
 }
 
-function isArray(arr){
+function isArray(arr) {
     //checks if its an array.
     if (!Array.isArray(arr)) {
         throw new Error('Input must be an array');

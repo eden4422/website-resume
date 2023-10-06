@@ -12,10 +12,16 @@
 </head>
 
 <body>
-    <p><a href="Main_Website.html">
-            Navigate Home</a>
-    </p>
     <div class="centered">
+
+        <!-- navagation bar -->
+        <ul class="navbar">
+            <li><a href="Main_Website.html">Home</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="#personal">Projects</a></li>
+        </ul>
+        <!-- end of navagation bar -->
+
         <!-- Intro to real stats -->
         <h1>Real Stats</h1>
         <p><span class="tab"></span>
@@ -29,7 +35,12 @@
             We made daunting tasks more manageable by breaking them into smaller steps, adding an element of fun and
             motivation.
         </p>
+        <!-- end of Intro to real stats -->
+
+        <!-- How it works section -->
         <h2>How It Works (make a video)</h2>
+        <video src=""></video>
+        <!-- end of section how it works -->
 
         <!-- Github Repo -->
         <h3>Github Repo</h3>
@@ -39,27 +50,66 @@
                 GitHub
             </button>
         </div>
-        <!-- Personal projects section -->
-        <h2>Personal Projects</h2>
-        <div class="carousel">
-            <div class="carousel-item">
-                <h3>This Website</h3>
-                <a href="This_Website.html">
-                    <img src="Images/My-Website.png" alt="Website Photo">
-                </a>
+        <!-- end of Github Repo -->
+
+        <!-- Technologies section-->
+        <section id="tools" class="hidden">
+            <h2>Technologies Used</h2>
+            <div class="logos">
+                <div class="logo hidden">
+                    <figure>
+                        <img src="Images/Csharp_logo.png" alt="C#-logo">
+                        <figcaption>CSharp</figcaption>
+                    </figure>
+                </div>
+                <div class="logo hidden">
+                    <figure>
+                        <img src="Images/XAML.png" alt="XAML-logo">
+                        <figcaption>XAML</figcaption>
+                    </figure>
+                </div>
+                <div class="logo hidden">
+                    <figure>
+                        <img src="Images/VS-logo.png" alt="VS-logo">
+                        <figcaption>Visual Studio</figcaption>
+                    </figure>
+                </div>
+                <div class="logo hidden">
+                    <figure>
+                        <img src="Images/Git-logo.png" alt="GitHub-logo">
+                        <figcaption>Git</figcaption>
+                    </figure>
+                </div>
             </div>
-            <div class="carousel-item">
-                <h3>Chess Game (In Early Stages)</h3>
-                <a href="Chess_Board.html">
-                    <img src="Images/Chess-Board.png" alt="Chessboard Photo">
-                </a>
+        </section>
+        <!-- End of Technologies section -->
+
+        <!-- Personal projects section -->
+        <div id="personal">
+            <h2>Personal Projects</h2>
+            <div class="carousel">
+                <div class="carousel-item">
+                    <h3>This Website</h3>
+                    <a href="This_Website.html">
+                        <img src="Images/My-Website.png" alt="Website Photo">
+                    </a>
+                </div>
+                <div class="carousel-item">
+                    <h3>Chess Game (In Early Stages)</h3>
+                    <a href="Chess_Board.html">
+                        <img src="Images/Chess-Board.png" alt="Chessboard Photo">
+                    </a>
+                </div>
             </div>
         </div>
+        <!-- end of Personal projects section -->
     </div>
+
     <!-- scripts -->
     <script src="Script/jquery.js"></script>
     <script src="Script/slick.min.js"></script>
     <script src="Script/scripts.js"></script>
+    <script defer src="Script/animations.js"></script>
 
     <script>
         $(document).ready(function () {
@@ -73,6 +123,8 @@
             });
         });
     </script>
+    <!-- end of scripts -->
+
     <footer>
         <!-- background image credit -->
         <p><a href="https://www.freepik.com/free-vector/abstract-blue-light-pipe-speed-zoom-black-background-technology_32947939.htm#query=dark%20website%20background&position=7&from_view=keyword&track=ais"
