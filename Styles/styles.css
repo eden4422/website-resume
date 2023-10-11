@@ -1,15 +1,3 @@
-body {
-    background-image: url('../Images/sleek.jpg');
-    background-size: 100% 100%;
-    /* Fits entienty of the background size */
-    background-repeat: no-repeat;
-    /* Prevents the image from repeating */
-    background-position: center;
-    /* Center the image within the container */
-    background-attachment: fixed;
-    /* Optional: Fixed background scrolling */
-}
-
 a {
     color: white;
     font-size: 20px;
@@ -62,6 +50,64 @@ figcaption {
     text-align: center;
     color: white;
     font-family: 'Roboto', sans-serif, 'Times New Roman', Arial;
+}
+
+.main-background {
+
+    background-image: url('../Images/sleek.jpg');
+    background-size: 100% 100%;
+    /* Fits entienty of the background size */
+    background-repeat: no-repeat;
+    /* Prevents the image from repeating */
+    background-position: center;
+    /* Center the image within the container */
+    background-attachment: fixed;
+    /* Fixed background scrolling */
+}
+
+.real-background {
+
+    background-image: url('../Images/real-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+}
+
+.website-background {
+
+    background-image: url('../Images/website-background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    background-position: center;
+
+    background-attachment: fixed;
+
+}
+
+.bot-background {
+
+    background-image: url('../Images/Bot-background.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.chessboard-background {
+
+    background-image: url('../Images/chessboard-background.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.black-background {
+
+    background-color: black;
 }
 
 .navbar {
@@ -175,7 +221,7 @@ figcaption {
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 1s 0.2s;
+    transition: all 1s;
 }
 
 .hidden2 {
