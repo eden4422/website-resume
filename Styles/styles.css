@@ -169,7 +169,7 @@ figcaption {
     /* creates margins to be centered*/
     margin-right: auto;
     /* spacing of the margins */
-    width: 50em;
+    width: 50vw;
 }
 
 .hidden {
@@ -188,8 +188,17 @@ figcaption {
     transition: all 1s 0.4s;
 }
 
+.hidden2-wrapper {
+
+    overflow: hidden;
+}
+
 @media(prefers-reduced-motion) {
     .hidden {
+        transition: none;
+    }
+
+    .hidden2 {
         transition: none;
     }
 }
@@ -198,7 +207,7 @@ figcaption {
 
     opacity: 1;
     filter: blur(0);
-    transform: translate(0);
+    transform: translate(0%);
 }
 
 .logos {
