@@ -1,117 +1,119 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Real Stats Page</title>
 
-    <link type="text/css" rel="stylesheet" href="Styles/slick.css">
-    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css">
-    <link type="text/css" rel="stylesheet" href="Styles/styles.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="Styles/slick.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/styles.css" />
+  </head>
 
-<body class="real-background">
+  <body class="real-background">
     <div class="centered">
+      <!-- navagation bar -->
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#personal">Projects</a></li>
+      </ul>
+      <!-- end of navagation bar -->
 
-        <!-- navagation bar -->
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#personal">Projects</a></li>
-        </ul>
-        <!-- end of navagation bar -->
+      <!-- Intro to real stats -->
+      <div id="intro" class="black-background">
+        <h1>Real Stats</h1>
+        <p>
+          <span class="tab"></span>
+          During the Coughacks Hack-a-Thon, our team of five student programmers
+          had only 24 hours to create functional software based on a surprise
+          theme.We researched, planned, designed, developed, tested, and
+          presented our project within this tight timeframe.
+        </p>
+        <p>
+          <span class="tab"></span>
+          Our project, "Real Stats," is a unique project inspired by classic
+          game character stat sheets. It helps users track their progress and
+          set achievable objectives for self-improvement and overall wellness.
+          We made daunting tasks more manageable by breaking them into smaller
+          steps, adding an element of fun and motivation.
+        </p>
+      </div>
+      <!-- end of Intro to real stats -->
 
-        <!-- Intro to real stats -->
-        <div id="intro" class="black-background">
-            <h1>Real Stats</h1>
-            <p><span class="tab"></span>
-                During the Coughacks Hack-a-Thon, our team of five student programmers had only 24 hours to create
-                functional software based on a surprise theme.We researched, planned, designed, developed, tested,
-                and presented our project within this tight timeframe.
-            </p>
-            <p><span class="tab"></span>
-                Our project, "Real Stats," is a unique project inspired by classic game character stat sheets. It helps
-                users track their progress and set achievable objectives for self-improvement and overall wellness.
-                We made daunting tasks more manageable by breaking them into smaller steps, adding an element of fun and
-                motivation.
-            </p>
+      <!-- How it works section -->
+      <h2>How It Works (make a video)</h2>
+      <video src=""></video>
+      <!-- end of section how it works -->
+
+      <!-- Github Repo -->
+      <h3>Github Repo</h3>
+      <div class="GitHub-Repo">
+        <button onclick="openStatsRepo()">
+          <img src="Images/github-logo.png" alt="github logo" />
+          GitHub
+        </button>
+      </div>
+      <!-- end of Github Repo -->
+
+      <!-- Technologies section-->
+      <section id="tools" class="hidden">
+        <h2>Technologies Used</h2>
+        <div class="logos">
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/Csharp_logo.png" alt="C#-logo" />
+              <figcaption>CSharp</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/XAML.png" alt="XAML-logo" />
+              <figcaption>XAML</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/VS-logo.png" alt="VS-logo" />
+              <figcaption>VS</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/Git-logo.png" alt="GitHub-logo" />
+              <figcaption>Git</figcaption>
+            </figure>
+          </div>
         </div>
-        <!-- end of Intro to real stats -->
+      </section>
+      <!-- End of Technologies section -->
 
-        <!-- How it works section -->
-        <h2>How It Works (make a video)</h2>
-        <video src=""></video>
-        <!-- end of section how it works -->
-
-        <!-- Github Repo -->
-        <h3>Github Repo</h3>
-        <div class="GitHub-Repo">
-            <button onclick="openStatsRepo()">
-                <img src="Images/github-logo.png" alt="github logo">
-                GitHub
-            </button>
+      <!-- Personal projects section -->
+      <div id="personal">
+        <h2>Personal Projects</h2>
+        <div class="carousel">
+          <div class="carousel-item">
+            <h3>This Website</h3>
+            <a href="This_Website.html">
+              <img src="Images/This-Website-Image.jpg" alt="Website" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Discord Bot</h3>
+            <a href="Discord_Bot.html">
+              <img src="Images/Discord-Bot.jpg" alt="Discord" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Chess Game (In Early Stages)</h3>
+            <a href="Chess_Board.html">
+              <img src="Images/Chess-Board.png" alt="Chessboard" />
+            </a>
+          </div>
         </div>
-        <!-- end of Github Repo -->
-
-        <!-- Technologies section-->
-        <section id="tools" class="hidden">
-            <h2>Technologies Used</h2>
-            <div class="logos">
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/Csharp_logo.png" alt="C#-logo">
-                        <figcaption>CSharp</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/XAML.png" alt="XAML-logo">
-                        <figcaption>XAML</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/VS-logo.png" alt="VS-logo">
-                        <figcaption>VS</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/Git-logo.png" alt="GitHub-logo">
-                        <figcaption>Git</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- End of Technologies section -->
-
-        <!-- Personal projects section -->
-        <div id="personal">
-            <h2>Personal Projects</h2>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <h3>This Website</h3>
-                    <a href="This_Website.html">
-                        <img src="Images/This-Website-Image.jpg" alt="Website Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>Discord Bot</h3>
-                    <a href="Discord_Bot.html">
-                        <img src="Images/Discord-Bot.jpg" alt="Discord Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>Chess Game (In Early Stages)</h3>
-                    <a href="Chess_Board.html">
-                        <img src="Images/Chess-Board.png" alt="Chessboard Photo">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- end of Personal projects section -->
+      </div>
+      <!-- end of Personal projects section -->
     </div>
 
     <!-- scripts -->
@@ -121,18 +123,17 @@
     <script defer src="Script/animations.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('.carousel').slick({
-                lazyLoad: 'ondemand',
-                infinite: true,
-                autoplay: true,
-                speed: 500,
-                autoplaySpeed: 15000,
-                fade: true,
-            });
+      $(document).ready(function () {
+        $(".carousel").slick({
+          lazyLoad: "ondemand",
+          infinite: true,
+          autoplay: true,
+          speed: 500,
+          autoplaySpeed: 15000,
+          fade: true,
         });
+      });
     </script>
     <!-- end of scripts -->
-</body>
-
+  </body>
 </html>

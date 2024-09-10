@@ -1,125 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>This Website Page</title>
 
-    <link type="text/css" rel="stylesheet" href="Styles/slick.css">
-    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css">
-    <link type="text/css" rel="stylesheet" href="Styles/styles.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="Styles/slick.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/styles.css" />
+  </head>
 
-<body class="website-background">
+  <body class="website-background">
     <div class="centered">
-        <!-- navagation bar -->
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#personal">Projects</a></li>
-        </ul>
-        <!-- end of navagation bar -->
+      <!-- navagation bar -->
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#personal">Projects</a></li>
+      </ul>
+      <!-- end of navagation bar -->
 
-        <!-- Intro to This Website -->
-        <div id="intro" class="black-background">
-            <h1>This Website</h1>
-            <p><span class="tab"></span>
-                I embarked on a significant web development project to showcase my ability to acquire and
-                apply new skills effectively. At the beginning of the project, my understanding of HTML, and
-                CSS was limited, and I had no prior experience with Javascript or plugins.
-            </p>
-            <p><span class="tab"></span>
-                What sets this project apart is my consistent commitment to self-improvement and independent learning.
-                I dedicated myself to acquiring these skills by studying documentation and utilizing online resources.
-                This self-guided learning allowed me to gain a solid understanding of HTML, CSS, Javascript, and the
-                nuances of the slick.io plugin.
-            </p>
-            <p><span class="tab"></span>
-                My website functions as a platform to showcase my project portfolio, with each project conveniently
-                linked to its respective GitHub repository. This allows visitors to explore my projects gain insights
-                into my technical proficiency.
-            </p>
-            <p><span class="tab"></span>
-                While the website may not boast a flashy exterior, it stands as evidence of my dedication to continuous
-                self-improvementand my capability to apply newly acquired skills in real-world scenarios, a valuable
-                asset for professional pursuits.
-            </p>
+      <!-- Intro to This Website -->
+      <div id="intro" class="black-background">
+        <h1>This Website</h1>
+        <p>
+          <span class="tab"></span>
+          I embarked on a significant web development project to showcase my
+          ability to acquire and apply new skills effectively. At the beginning
+          of the project, my understanding of HTML, and CSS was limited, and I
+          had no prior experience with Javascript or plugins.
+        </p>
+        <p>
+          <span class="tab"></span>
+          What sets this project apart is my consistent commitment to
+          self-improvement and independent learning. I dedicated myself to
+          acquiring these skills by studying documentation and utilizing online
+          resources. This self-guided learning allowed me to gain a solid
+          understanding of HTML, CSS, Javascript, and the nuances of the
+          slick.io plugin.
+        </p>
+        <p>
+          <span class="tab"></span>
+          My website functions as a platform to showcase my project portfolio,
+          with each project conveniently linked to its respective GitHub
+          repository. This allows visitors to explore my projects gain insights
+          into my technical proficiency.
+        </p>
+        <p>
+          <span class="tab"></span>
+          While the website may not boast a flashy exterior, it stands as
+          evidence of my dedication to continuous self-improvementand my
+          capability to apply newly acquired skills in real-world scenarios, a
+          valuable asset for professional pursuits.
+        </p>
+      </div>
+      <!-- End of Intro to This Website -->
+
+      <!-- Github Repo -->
+      <h3>Github Repo</h3>
+      <div class="GitHub-Repo" style="padding-bottom: 20vh">
+        <button onclick="openWebsiteRepo()">
+          <img src="Images/github-logo.png" alt="github logo" />
+          GitHub
+        </button>
+      </div>
+      <!-- End of Github Repo -->
+
+      <!-- Technologies section-->
+      <section id="tools" class="hidden">
+        <h2>Technologies Used</h2>
+        <div class="logos">
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/HTML-logo.png" alt="HTML-logo" />
+              <figcaption>HTML</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/CSS-logo.png" alt="CSS-logo" />
+              <figcaption>CSS</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/JS-logo.png" alt="JS-logo" />
+              <figcaption>Javascript</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/Git-logo.png" alt="Git-logo" />
+              <figcaption>Git</figcaption>
+            </figure>
+          </div>
         </div>
-        <!-- End of Intro to This Website -->
+      </section>
+      <!-- End of Technologies section -->
 
-        <!-- Github Repo -->
-        <h3>Github Repo</h3>
-        <div class="GitHub-Repo" style="padding-bottom: 20vh;">
-            <button onclick="openWebsiteRepo()">
-                <img src="Images/github-logo.png" alt="github logo">
-                GitHub
-            </button>
+      <!-- Personal projects section -->
+      <div id="personal">
+        <h2>Personal Projects</h2>
+        <p>
+          The carousel below was made using the
+          <a href="https://kenwheeler.github.io/slick/" target="_blank"
+            >slick plug-in</a
+          >
+        </p>
+
+        <div class="carousel">
+          <div class="carousel-item">
+            <h3>Discord Bot</h3>
+            <a href="Discord_Bot.html">
+              <img src="Images/Discord-Bot.jpg" alt="Discord" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Chess Game (In Early Stages)</h3>
+            <a href="Chess_Board.html">
+              <img src="Images/Chess-Board.png" alt="Chessboard" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Real Stats Hack-a-Thon Project</h3>
+            <a href="Real_Stats.html">
+              <img src="Images/Real-Stats.png" alt="Real Stats" />
+            </a>
+          </div>
         </div>
-        <!-- End of Github Repo -->
-
-        <!-- Technologies section-->
-        <section id="tools" class="hidden">
-            <h2>Technologies Used</h2>
-            <div class="logos">
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/HTML-logo.png" alt="HTML-logo">
-                        <figcaption>HTML</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/CSS-logo.png" alt="CSS-logo">
-                        <figcaption>CSS</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/JS-logo.png" alt="JS-logo">
-                        <figcaption>Javascript</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/Git-logo.png" alt="Git-logo">
-                        <figcaption>Git</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- End of Technologies section -->
-
-        <!-- Personal projects section -->
-        <div id="personal">
-            <h2>Personal Projects</h2>
-            <p>The carousel below was made using the <a href="https://kenwheeler.github.io/slick/" target="_blank">slick
-                    plug-in</a></p>
-
-            <div class="carousel">
-                <div class="carousel-item">
-                    <h3>Discord Bot</h3>
-                    <a href="Discord_Bot.html">
-                        <img src="Images/Discord-Bot.jpg" alt="Discord Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>Chess Game (In Early Stages)</h3>
-                    <a href="Chess_Board.html">
-                        <img src="Images/Chess-Board.png" alt="Chessboard Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>Real Stats Hack-a-Thon Project</h3>
-                    <a href="Real_Stats.html">
-                        <img src="Images/Real-Stats.png" alt="Real Stats Photo">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- End of Personal projects section -->
-
+      </div>
+      <!-- End of Personal projects section -->
     </div>
 
     <!-- scripts -->
@@ -129,17 +140,16 @@
     <script defer src="Script/animations.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('.carousel').slick({
-                lazyLoad: 'ondemand',
-                infinite: true,
-                autoplay: true,
-                speed: 500,
-                autoplaySpeed: 15000,
-                fade: true,
-            });
+      $(document).ready(function () {
+        $(".carousel").slick({
+          lazyLoad: "ondemand",
+          infinite: true,
+          autoplay: true,
+          speed: 500,
+          autoplaySpeed: 15000,
+          fade: true,
         });
+      });
     </script>
-</body>
-
+  </body>
 </html>

@@ -1,119 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Discord Bot Page</title>
 
-    <link type="text/css" rel="stylesheet" href="Styles/slick.css">
-    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css">
-    <link type="text/css" rel="stylesheet" href="Styles/styles.css">
-</head>
+    <link type="text/css" rel="stylesheet" href="Styles/slick.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/slick-theme.css" />
+    <link type="text/css" rel="stylesheet" href="Styles/styles.css" />
+  </head>
 
-<body class="bot-background">
+  <body class="bot-background">
     <div class="centered">
+      <!-- navagation bar -->
+      <ul class="navbar">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#intro">Intro</a></li>
+        <li><a href="#tools">Tools</a></li>
+        <li><a href="#personal">Projects</a></li>
+      </ul>
+      <!-- end of navagation bar -->
 
-        <!-- navagation bar -->
-        <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#intro">Intro</a></li>
-            <li><a href="#tools">Tools</a></li>
-            <li><a href="#personal">Projects</a></li>
-        </ul>
-        <!-- end of navagation bar -->
+      <!-- Intro to Discord Bot -->
+      <div id="intro" class="black-background">
+        <h1>Discord Bot</h1>
+        <p>
+          <span class="tab"></span>
+          I designed and developed a Discord bot from the ground up utilizing
+          Python and drawing almost exclusively from the
+          <a href="https://discordpy.readthedocs.io/en/stable/api.html"
+            >discord.py</a
+          >
+          documentation. This project showcases my ability to grasp complex
+          documentation and apply it effectively.
+        </p>
+        <p>
+          <span class="tab"></span>
+          The primary functionality of the bot centers around user interaction.
+          Using the bot is as simple as typing a command in the format
+          '!(commandname)' within the Discord server. Upon receiving this
+          command, the bot responds by sending pictures of my friends depending
+          on the command given.
+        </p>
+        <p>
+          <span class="tab"></span>
+          In addition to its picture-sharing capabilities, my bot incorporates
+          JSON functionality to interact with a public API that offers random
+          cat facts. When users trigger this command, the bot fetches a cat fact
+          from the API and replies promptly to the user who initiated the
+          command. This demonstrates my ability to work with external data
+          sources, parse JSON data, and respond dynamically to user inputs.
+        </p>
+      </div>
+      <!-- End of Intro to Discord Bot -->
 
-        <!-- Intro to Discord Bot -->
-        <div id="intro" class="black-background">
-            <h1>Discord Bot</h1>
-            <p><span class="tab"></span>
-                I designed and developed a Discord bot from the ground up utilizing Python
-                and drawing almost exclusively from the
-                <a href="https://discordpy.readthedocs.io/en/stable/api.html">discord.py</a>
-                documentation. This project showcases my ability to grasp complex documentation
-                and apply it effectively.
-            </p>
-            <p><span class="tab"></span>
-                The primary functionality of the bot centers around user interaction. Using the bot is
-                as simple as typing a command in the format '!(commandname)' within the Discord server. Upon receiving
-                this command, the bot responds by sending pictures of my friends depending on the command given.
-            </p>
-            <p><span class="tab"></span>
-                In addition to its picture-sharing capabilities, my bot incorporates JSON functionality to interact with
-                a public API that offers random cat facts. When users trigger this command, the bot fetches a cat
-                fact from the API and replies promptly to the user who initiated the command. This demonstrates my
-                ability to work with external data sources, parse JSON data, and respond dynamically to user inputs.
-            </p>
+      <!-- How it works section -->
+      <h2>How It Works (make a video)</h2>
+      <video src=""></video>
+      <!-- end of section how it works -->
+
+      <!-- Github Repo -->
+      <h3>Github Repo</h3>
+      <div class="GitHub-Repo">
+        <button onclick="openDiscordBotRepo()">
+          <img src="Images/github-logo.png" alt="github logo" />
+          GitHub
+        </button>
+      </div>
+      <!-- End of Github Repo -->
+
+      <!-- Technologies section-->
+      <section id="tools" class="hidden">
+        <h2>Technologies Used</h2>
+        <div class="logos">
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/python-logo.png" alt="python-logo" />
+              <figcaption>Python</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/Discord-API.png" alt="Discord-API-logo" />
+              <figcaption>Discord API</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="Images/JSON-logo.png" alt="JSON-logo" />
+              <figcaption>JSON</figcaption>
+            </figure>
+          </div>
         </div>
-        <!-- End of Intro to Discord Bot -->
+      </section>
+      <!-- End of Technologies section -->
 
-        <!-- How it works section -->
-        <h2>How It Works (make a video)</h2>
-        <video src=""></video>
-        <!-- end of section how it works -->
-
-        <!-- Github Repo -->
-        <h3>Github Repo</h3>
-        <div class="GitHub-Repo">
-            <button onclick="openDiscordBotRepo()">
-                <img src="Images/github-logo.png" alt="github logo">
-                GitHub
-            </button>
+      <!-- Personal projects section -->
+      <div id="personal">
+        <h2>Personal Projects</h2>
+        <div class="carousel">
+          <div class="carousel-item">
+            <h3>Chess Game (In Early Stages)</h3>
+            <a href="Chess_Board.html">
+              <img src="Images/Chess-Board.png" alt="Chessboard" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Real Stats Hack-a-Thon Project</h3>
+            <a href="Real_Stats.html">
+              <img src="Images/Real-Stats.png" alt="Real Stats" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>This Website</h3>
+            <a href="This_Website.html">
+              <img src="Images/This-Website-Image.jpg" alt="Website" />
+            </a>
+          </div>
         </div>
-        <!-- End of Github Repo -->
-
-        <!-- Technologies section-->
-        <section id="tools" class="hidden">
-            <h2>Technologies Used</h2>
-            <div class="logos">
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/python-logo.png" alt="python-logo">
-                        <figcaption>Python</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/Discord-API.png" alt="Discord-API-logo">
-                        <figcaption>Discord API</figcaption>
-                    </figure>
-                </div>
-                <div class="logo hidden">
-                    <figure>
-                        <img src="Images/JSON-logo.png" alt="JSON-logo">
-                        <figcaption>JSON</figcaption>
-                    </figure>
-                </div>
-            </div>
-        </section>
-        <!-- End of Technologies section -->
-
-        <!-- Personal projects section -->
-        <div id="personal">
-            <h2>Personal Projects</h2>
-            <div class="carousel">
-                <div class="carousel-item">
-                    <h3>Chess Game (In Early Stages)</h3>
-                    <a href="Chess_Board.html">
-                        <img src="Images/Chess-Board.png" alt="Chessboard Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>Real Stats Hack-a-Thon Project</h3>
-                    <a href="Real_Stats.html">
-                        <img src="Images/Real-Stats.png" alt="Real Stats Image">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <h3>This Website</h3>
-                    <a href="This_Website.html">
-                        <img src="Images/This-Website-Image.jpg" alt="Website Image">
-                    </a>
-                </div>
-            </div>
-        </div>
-        <!-- End of Personal projects section -->
-
+      </div>
+      <!-- End of Personal projects section -->
     </div>
 
     <!-- scripts -->
@@ -123,18 +129,17 @@
     <script defer src="Script/animations.js"></script>
 
     <script>
-        $(document).ready(function () {
-            $('.carousel').slick({
-                lazyLoad: 'ondemand',
-                infinite: true,
-                autoplay: true,
-                speed: 500,
-                autoplaySpeed: 15000,
-                fade: true,
-            });
+      $(document).ready(function () {
+        $(".carousel").slick({
+          lazyLoad: "ondemand",
+          infinite: true,
+          autoplay: true,
+          speed: 500,
+          autoplaySpeed: 15000,
+          fade: true,
         });
+      });
     </script>
     <!-- End of scripts -->
-</body>
-
+  </body>
 </html>
