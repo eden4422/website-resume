@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Real Stats Page</title>
+    <title>This Website Page</title>
 
     <link type="text/css" rel="stylesheet" href="/Styles/slick.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/slick-theme.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/styles.css" />
   </head>
 
-  <body class="real-background">
+  <body class="website-background">
     <div class="centered">
       <!-- navagation bar -->
       <ul class="navbar">
@@ -21,41 +21,51 @@
       </ul>
       <!-- end of navagation bar -->
 
-      <!-- Intro to real stats -->
+      <!-- Intro to This Website -->
       <div id="intro" class="black-background">
-        <h1>Real Stats</h1>
+        <h1>This Website</h1>
         <p>
           <span class="tab"></span>
-          During the Coughacks Hack-a-Thon, our team of five student programmers
-          had only 24 hours to create functional software based on a surprise
-          theme.We researched, planned, designed, developed, tested, and
-          presented our project within this tight timeframe.
+          I embarked on a significant web development project to showcase my
+          ability to acquire and apply new skills effectively. At the beginning
+          of the project, my understanding of HTML, and CSS was limited, and I
+          had no prior experience with Javascript or plugins.
         </p>
         <p>
           <span class="tab"></span>
-          Our project, "Real Stats," is a unique project inspired by classic
-          game character stat sheets. It helps users track their progress and
-          set achievable objectives for self-improvement and overall wellness.
-          We made daunting tasks more manageable by breaking them into smaller
-          steps, adding an element of fun and motivation.
+          What sets this project apart is my consistent commitment to
+          self-improvement and independent learning. I dedicated myself to
+          acquiring these skills by studying documentation and utilizing online
+          resources. This self-guided learning allowed me to gain a solid
+          understanding of HTML, CSS, Javascript, and the nuances of the
+          slick.io plugin.
+        </p>
+        <p>
+          <span class="tab"></span>
+          My website functions as a platform to showcase my project portfolio,
+          with each project conveniently linked to its respective GitHub
+          repository. This allows visitors to explore my projects gain insights
+          into my technical proficiency.
+        </p>
+        <p>
+          <span class="tab"></span>
+          While the website may not boast a flashy exterior, it stands as
+          evidence of my dedication to continuous self-improvementand my
+          capability to apply newly acquired skills in real-world scenarios, a
+          valuable asset for professional pursuits.
         </p>
       </div>
-      <!-- end of Intro to real stats -->
-
-      <!-- How it works section -->
-      <h2>How It Works (make a video)</h2>
-      <video src=""></video>
-      <!-- end of section how it works -->
+      <!-- End of Intro to This Website -->
 
       <!-- Github Repo -->
       <h3>Github Repo</h3>
-      <div class="GitHub-Repo">
-        <button onclick="openStatsRepo()">
+      <div class="GitHub-Repo" style="padding-bottom: 20vh">
+        <button onclick="openWebsiteRepo()">
           <img src="/Images/github-logo.png" alt="github logo" />
           GitHub
         </button>
       </div>
-      <!-- end of Github Repo -->
+      <!-- End of Github Repo -->
 
       <!-- Technologies section-->
       <section id="tools" class="hidden">
@@ -63,25 +73,25 @@
         <div class="logos">
           <div class="logo hidden">
             <figure>
-              <img src="/Images/Csharp_logo.png" alt="C#-logo" />
-              <figcaption>CSharp</figcaption>
+              <img src="/Images/HTML-logo.png" alt="HTML-logo" />
+              <figcaption>HTML</figcaption>
             </figure>
           </div>
           <div class="logo hidden">
             <figure>
-              <img src="/Images/XAML.png" alt="XAML-logo" />
-              <figcaption>XAML</figcaption>
+              <img src="/Images/CSS-logo.png" alt="CSS-logo" />
+              <figcaption>CSS</figcaption>
             </figure>
           </div>
           <div class="logo hidden">
             <figure>
-              <img src="/Images/VS-logo.png" alt="VS-logo" />
-              <figcaption>VS</figcaption>
+              <img src="/Images/JS-logo.png" alt="JS-logo" />
+              <figcaption>Javascript</figcaption>
             </figure>
           </div>
           <div class="logo hidden">
             <figure>
-              <img src="/Images/Git-logo.png" alt="GitHub-logo" />
+              <img src="/Images/Git-logo.png" alt="Git-logo" />
               <figcaption>Git</figcaption>
             </figure>
           </div>
@@ -92,28 +102,35 @@
       <!-- Personal projects section -->
       <div id="personal">
         <h2>Personal Projects</h2>
+        <p>
+          The carousel below was made using the
+          <a href="https://kenwheeler.github.io/slick/" target="_blank"
+            >slick plug-in</a
+          >
+        </p>
+
         <div class="carousel">
           <div class="carousel-item">
-            <h3>This Website</h3>
-            <a href="This_Website.html">
-              <img src="/Images/This-Website-Image.jpg" alt="Website" />
-            </a>
-          </div>
-          <div class="carousel-item">
             <h3>Discord Bot</h3>
-            <a href="Discord_Bot.html">
+            <a href="/Discord_Bot/index.html">
               <img src="/Images/Discord-Bot.jpg" alt="Discord" />
             </a>
           </div>
           <div class="carousel-item">
             <h3>Chess Game (In Early Stages)</h3>
-            <a href="Chess_Board.html">
+            <a href="/Chess_Board/index.html">
               <img src="/Images/Chess-Board.png" alt="Chessboard" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Real Stats Hack-a-Thon Project</h3>
+            <a href="/Real_Stats/index.html">
+              <img src="/Images/Real-Stats.png" alt="Real Stats" />
             </a>
           </div>
         </div>
       </div>
-      <!-- end of Personal projects section -->
+      <!-- End of Personal projects section -->
     </div>
 
     <!-- scripts -->
@@ -134,6 +151,5 @@
         });
       });
     </script>
-    <!-- end of scripts -->
   </body>
 </html>

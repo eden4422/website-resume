@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Discord Bot Page</title>
+    <title>Real Stats Page</title>
 
     <link type="text/css" rel="stylesheet" href="/Styles/slick.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/slick-theme.css" />
     <link type="text/css" rel="stylesheet" href="/Styles/styles.css" />
   </head>
 
-  <body class="bot-background">
+  <body class="real-background">
     <div class="centered">
       <!-- navagation bar -->
       <ul class="navbar">
@@ -21,38 +21,26 @@
       </ul>
       <!-- end of navagation bar -->
 
-      <!-- Intro to Discord Bot -->
+      <!-- Intro to real stats -->
       <div id="intro" class="black-background">
-        <h1>Discord Bot</h1>
+        <h1>Real Stats</h1>
         <p>
           <span class="tab"></span>
-          I designed and developed a Discord bot from the ground up utilizing
-          Python and drawing almost exclusively from the
-          <a href="https://discordpy.readthedocs.io/en/stable/api.html"
-            >discord.py</a
-          >
-          documentation. This project showcases my ability to grasp complex
-          documentation and apply it effectively.
+          During the Coughacks Hack-a-Thon, our team of five student programmers
+          had only 24 hours to create functional software based on a surprise
+          theme.We researched, planned, designed, developed, tested, and
+          presented our project within this tight timeframe.
         </p>
         <p>
           <span class="tab"></span>
-          The primary functionality of the bot centers around user interaction.
-          Using the bot is as simple as typing a command in the format
-          '!(commandname)' within the Discord server. Upon receiving this
-          command, the bot responds by sending pictures of my friends depending
-          on the command given.
-        </p>
-        <p>
-          <span class="tab"></span>
-          In addition to its picture-sharing capabilities, my bot incorporates
-          JSON functionality to interact with a public API that offers random
-          cat facts. When users trigger this command, the bot fetches a cat fact
-          from the API and replies promptly to the user who initiated the
-          command. This demonstrates my ability to work with external data
-          sources, parse JSON data, and respond dynamically to user inputs.
+          Our project, "Real Stats," is a unique project inspired by classic
+          game character stat sheets. It helps users track their progress and
+          set achievable objectives for self-improvement and overall wellness.
+          We made daunting tasks more manageable by breaking them into smaller
+          steps, adding an element of fun and motivation.
         </p>
       </div>
-      <!-- End of Intro to Discord Bot -->
+      <!-- end of Intro to real stats -->
 
       <!-- How it works section -->
       <h2>How It Works (make a video)</h2>
@@ -62,12 +50,12 @@
       <!-- Github Repo -->
       <h3>Github Repo</h3>
       <div class="GitHub-Repo">
-        <button onclick="openDiscordBotRepo()">
+        <button onclick="openStatsRepo()">
           <img src="/Images/github-logo.png" alt="github logo" />
           GitHub
         </button>
       </div>
-      <!-- End of Github Repo -->
+      <!-- end of Github Repo -->
 
       <!-- Technologies section-->
       <section id="tools" class="hidden">
@@ -75,20 +63,26 @@
         <div class="logos">
           <div class="logo hidden">
             <figure>
-              <img src="/Images/python-logo.png" alt="python-logo" />
-              <figcaption>Python</figcaption>
+              <img src="/Images/Csharp_logo.png" alt="C#-logo" />
+              <figcaption>CSharp</figcaption>
             </figure>
           </div>
           <div class="logo hidden">
             <figure>
-              <img src="/Images/Discord-API.png" alt="Discord-API-logo" />
-              <figcaption>Discord API</figcaption>
+              <img src="/Images/XAML.png" alt="XAML-logo" />
+              <figcaption>XAML</figcaption>
             </figure>
           </div>
           <div class="logo hidden">
             <figure>
-              <img src="/Images/JSON-logo.png" alt="JSON-logo" />
-              <figcaption>JSON</figcaption>
+              <img src="/Images/VS-logo.png" alt="VS-logo" />
+              <figcaption>VS</figcaption>
+            </figure>
+          </div>
+          <div class="logo hidden">
+            <figure>
+              <img src="/Images/Git-logo.png" alt="GitHub-logo" />
+              <figcaption>Git</figcaption>
             </figure>
           </div>
         </div>
@@ -100,26 +94,26 @@
         <h2>Personal Projects</h2>
         <div class="carousel">
           <div class="carousel-item">
-            <h3>Chess Game (In Early Stages)</h3>
-            <a href="Chess_Board.html">
-              <img src="Images/Chess-Board.png" alt="Chessboard" />
-            </a>
-          </div>
-          <div class="carousel-item">
-            <h3>Real Stats Hack-a-Thon Project</h3>
-            <a href="Real_Stats.html">
-              <img src="Images/Real-Stats.png" alt="Real Stats" />
-            </a>
-          </div>
-          <div class="carousel-item">
             <h3>This Website</h3>
-            <a href="This_Website.html">
-              <img src="Images/This-Website-Image.jpg" alt="Website" />
+            <a href="/portfolio/index.html">
+              <img src="/Images/This-Website-Image.jpg" alt="Website" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Discord Bot</h3>
+            <a href="/Discord_Bot/index.html">
+              <img src="/Images/Discord-Bot.jpg" alt="Discord" />
+            </a>
+          </div>
+          <div class="carousel-item">
+            <h3>Chess Game (In Early Stages)</h3>
+            <a href="/Chess_Board/index.html">
+              <img src="/Images/Chess-Board.png" alt="Chessboard" />
             </a>
           </div>
         </div>
       </div>
-      <!-- End of Personal projects section -->
+      <!-- end of Personal projects section -->
     </div>
 
     <!-- scripts -->
@@ -140,6 +134,6 @@
         });
       });
     </script>
-    <!-- End of scripts -->
+    <!-- end of scripts -->
   </body>
 </html>
